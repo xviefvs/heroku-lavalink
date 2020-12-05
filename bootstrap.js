@@ -49,7 +49,7 @@ function startLavalink() {
     });
 }
 
-if (process.env.APP_NAME)
+if (process.env.APP_NAME) {
         keepAlive();
 }
 
