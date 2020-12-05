@@ -47,10 +47,9 @@ function startLavalink() {
     child.on('close', (code) => {
         console.log(`Lavalink exited with code ${code}`);
     });
-}
-
-if (process.env.APP_NAME) {
-        keepAlive();
+    
+    if(process.env.APP_NAME)
+    keepAlive()
 }
 
 console.log('Fetching latest Lavalink.jar url...')
