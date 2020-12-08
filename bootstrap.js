@@ -57,7 +57,7 @@ fetch('https://api.github.com/repos/Frederikam/Lavalink/releases/latest')
     .then(res => res.json())
     .then(json => {
         console.log('Found: '+json.assets[0].browser_download_url)
-        download(json.assets[0].browser_download_url, ''./Lavalink.jar', startLavalink)
+        download(json.assets[0].browser_download_url, './Lavalink.jar', startLavalink)
     });
 
 // https://cdn.glitch.com/be628ae2-455f-4fd7-b7c8-79c0d210ca1f%2FLavalink.jar?v=1607258575105%27,
